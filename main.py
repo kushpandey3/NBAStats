@@ -1,5 +1,4 @@
-import pandas as pd
-import json
+import pandas as pd, json
 from nba_api.stats.endpoints import playergamelog
 from nba_api.stats.static import players
 data = {}
@@ -69,7 +68,8 @@ def viewSummary(playerName, season):
 
 
 loadData()
+
 #viewGameLog("Stephen curry", 2023)
 #viewSummary("Stephen Curry", 2025)
-#viewSummary("Al Horford", 2010)
+viewSummary("Al Horford", 2010)
 
